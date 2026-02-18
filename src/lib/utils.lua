@@ -21,6 +21,18 @@ function M.round(n)
         return math.ceil(n - 0.5)
     end
 end
+
+function M.ToConsoleCoords(x,y) --BIG SHIT
+    local consolX = x + 7
+    local consolY = y + 7
+    return consolX, consolY
+end
+
+function M.ToCenterCoords(consolX,consolY)
+    local x = consolX - 7
+    local y = consolY - 7
+    return x,y
+end
 --Functions--
 
 return M

@@ -60,6 +60,7 @@ function M.GoToPosition(x, y)
         elseif posY > y then
             M.move(1, "down")
         end
+    end
 end
 --Movement--
 
